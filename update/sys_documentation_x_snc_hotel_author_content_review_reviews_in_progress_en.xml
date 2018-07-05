@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="reviews_in_progress" label="Reviews in progress" language="en" table="x_snc_hotel_author_content_review">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>reviews_in_progress</element>
+            <help/>
+            <hint/>
+            <label>Reviews in progress</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <plural>Reviews in progress</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:33:16</sys_created_on>
+            <sys_id>4b0c61cadb0f9b40934f3400ad96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reviews in progress</sys_name>
+            <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_hotel_author_content_review_reviews_in_progress_en</sys_update_name>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-03 14:33:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="reviews_in_progress" table="x_snc_hotel_author_content_review" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reviews_in_progress</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reviews complete</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <sequence>0</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:35:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e46c29cadb0f9b40934f3400ad96191d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-03 14:35:46</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reviews_in_progress</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review in progress</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <sequence>1</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:33:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad2c25cadb0f9b40934f3400ad961942</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-03 14:35:16</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reviews_in_progress</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reviews in progress</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <sequence>2</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:34:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>343c25cadb0f9b40934f3400ad96195b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-03 14:35:23</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>reviews_in_progress</element>
+            <name>x_snc_hotel_author_content_review</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:33:56</sys_created_on>
+            <sys_id>ac3c25cadb0f9b40934f3400ad96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>reviews_in_progress</sys_name>
+            <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+            <sys_update_name>sys_choice_x_snc_hotel_author_content_review_reviews_in_progress</sys_update_name>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-03 14:33:56</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

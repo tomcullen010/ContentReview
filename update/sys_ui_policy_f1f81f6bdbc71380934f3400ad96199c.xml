@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_snc_hotel_author_content_review">stateIN3,4,7,8,10^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="3,4,7,8,10"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Protect fields when request review is complete</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-08 14:21:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f1f81f6bdbc71380934f3400ad96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Protect fields when request review is complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_ui_policy_f1f81f6bdbc71380934f3400ad96199c</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-08 14:21:40</sys_updated_on>
+        <table>x_snc_hotel_author_content_review</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

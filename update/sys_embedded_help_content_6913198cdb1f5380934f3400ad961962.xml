@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>assessment</category>
+        <content><![CDATA[<div>
+ <h1 class="title topictitle1">Assessable records</h1>
+ <div class="body conbody">
+  <div class="section role-admin"> 
+   <p class="p">You use assessments to evaluate the assessable record. The system generates assessable records from the source records that match the table and conditions set on the Assessment Metric Type form. You evaluate the assessable records with metric categories and metrics, which define traits and values to assess. For metric types with the <span class="ph uicontrol">On demand</span> schedule type, you can generate on-demand assessments from the Assessable Record form. This method of assessment generation makes it easy to create and preview short questionnaires or to quickly obtain assessment results for specific assessable records.</p> 
+   <div class="p">
+    You can set up an assessment description that includes information from multiple fields on an assessable record and is displayed on multiple lines. This provides the user who is taking the assessment with a more detailed and understandable description of the information being requested on the assessment questionnaire. Create a multi-line description using table titles, which can be defined to use one or more fields from the selected table.
+    <div class="note note">
+     <span class="notetitle">Note:</span> By default, the list displays only assessable records with 
+     <span class="ph uicontrol">Active</span> metric types.
+    </div>
+   </div> 
+  </div>
+ </div>
+ <div class="related-links">
+  <div class="relinfo">
+   <div class="reltitle">
+    Related information
+    <br />
+    <div>
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:AssessableRecords&amp;version&#61;kingston" target="_blank">Assessable records</a>
+    </div>
+    <div>
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:GenerateOnDemandAssessment&amp;version&#61;kingston" target="_blank">Generate an on-demand assessment for one assessable record</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>]]></content>
+        <last_sync>2018-07-09 17:52:04</last_sync>
+        <modifier>normal</modifier>
+        <name>asmt_assessable_record_list-normal</name>
+        <page>asmt_assessable_record_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</role>
+        <role_order>10</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-07-09 17:52:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6913198cdb1f5380934f3400ad961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_assessable_record_list-normal</sys_name>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_embedded_help_content_6913198cdb1f5380934f3400ad961962</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-07-09 17:52:04</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=6913198cdb1f5380934f3400ad961962"/>
+</record_update>

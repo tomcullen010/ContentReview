@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>assessment</category>
+        <content><![CDATA[    <h1 class="title topictitle1">Assessment Metric Type form</h1>        <div class="body taskbody">        <div class="section context" id="asmt_metric_type-normal__context_gxh_fnt_zz"><span class="ph">A metric type defines a set of records an organization wants    to evaluate, such as vendors, projects, or employees. For each type, the system generates unique    assessable records that link the type to records that need to be evaluated, such as the    individual records for the vendors Amazon and Intel. There may be multiple assessable records    for the same source record if the source record meets the criteria for more than one type.</span><p class="p">In addition to defining assessable records, metric types                also determine how to filter decision matrix data and set the schedule type, which                determines whether assessments are on-demand or scheduled.</p></div>        <ol class="ol steps"><li class="li step stepexpand">                <span class="ph cmd">Complete the fields in the form.</span>            </li><li class="li step stepexpand">                <span class="ph cmd">When you are satisfied with the type settings, click                        <span class="ph uicontrol">Generate Assessable Records</span> to save the record and                    create assessable records. The page redirects to the list of assessable records                    created.</span>                <div class="itemgroup info"><span class="ph">You must click <span class="ph uicontrol">Generate Assessable                            Records</span> to create the initial set of assessable records                        based on the table and conditions specified on the type record. After that,                        the system creates an assessable record each time a new matching record is                        created. <span class="ph uicontrol">Generate Assessable Records</span> is located under                            <span class="ph uicontrol">Related Links</span>.</span><div class="note note"><span class="notetitle">Note:</span> The                            <span class="ph uicontrol">Generate Assessments</span> button is visible to                        administrators in certain cases for scheduled assessments. Do not click the                        button until after completing the prerequisite tasks. </div><div class="cautiontitle">CAUTION:</div><div class="note caution"><span class="ph">Clicking <span class="ph uicontrol">Generate Assessable                                Records</span> can trigger the deletion of existing assessable                            records under certain circumstances. </span></div></div>            </li></ol>    </div>    <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:CreateMetricType&amp;version&#61;kingston" target="_blank">Create metric types and generate assessable records</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:MetricTypesAssessableRecords&amp;version&#61;kingston" target="_blank">Metric types and assessable records</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:DeleteAssessableRecord&amp;version&#61;kingston" target="_blank">Enforce a condition to delete an assessable record</a></div></div></div></div>]]></content>
+        <last_sync>2018-07-09 17:52:04</last_sync>
+        <modifier>normal</modifier>
+        <name>asmt_metric_type-normal</name>
+        <page>asmt_metric_type</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-07-09 17:52:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a913198cdb1f5380934f3400ad961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_type-normal</sys_name>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_embedded_help_content_a913198cdb1f5380934f3400ad961961</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-07-09 17:52:04</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=a913198cdb1f5380934f3400ad961961"/>
+</record_update>

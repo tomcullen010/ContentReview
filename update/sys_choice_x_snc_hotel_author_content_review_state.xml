@@ -6,44 +6,6 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Review in Progress</label>
-            <language>en</language>
-            <name>x_snc_hotel_author_content_review</name>
-            <sequence/>
-            <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-03 14:29:12</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d12a654adb0f9b40934f3400ad9619dc</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-03 14:29:39</sys_updated_on>
-            <value>21</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Review Complete</label>
-            <language>en</language>
-            <name>x_snc_hotel_author_content_review</name>
-            <sequence/>
-            <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-03 14:29:52</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>a31b218adb0f9b40934f3400ad9619dd</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-03 14:30:06</sys_updated_on>
-            <value>22</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>false</inactive>
             <label>Pending</label>
             <language>en</language>
             <name>x_snc_hotel_author_content_review</name>
@@ -95,6 +57,44 @@
             <sys_updated_by>tom.cullen</sys_updated_by>
             <sys_updated_on>2018-07-03 11:55:44</sys_updated_on>
             <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review in Progress</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <sequence>33</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:29:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d12a654adb0f9b40934f3400ad9619dc</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-08 12:44:12</sys_updated_on>
+            <value>21</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review Complete</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <sequence>35</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-03 14:29:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a31b218adb0f9b40934f3400ad9619dd</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-08 12:44:21</sys_updated_on>
+            <value>22</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

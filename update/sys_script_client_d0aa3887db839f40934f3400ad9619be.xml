@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Requests that have image media require at least 1 attachment</description>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>checkAttachment</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	
+	
+	var reqSysid = g_form.getUniqueValue();
+	alert(reqSysid);
+	
+	var contType = g_form.getValue('content_type');
+	if(contType.indexOf('Image')>=0){   //<-- Check that this is an image media request
+		
+		var sys_id = g_form.getUniqueValue();
+		var ga = new GlideAjax('AJAXcheckAttachment');
+		ga.addParam('sysparm_name','checkAttachment');
+		ga.addParam('sys_id', reqSysid);
+		ga.getXMLWait();
+		
+		var check = ga.getAnswer();
+		
+		if (check == 'false'){
+			g_form.addErrorMessage('Image requests must include an attachment');
+			return false;
+			
+		}
+		
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-06 14:46:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d0aa3887db839f40934f3400ad9619be</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>checkAttachment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_script_client_d0aa3887db839f40934f3400ad9619be</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-08 13:39:47</sys_updated_on>
+        <table>x_snc_hotel_author_content_review</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

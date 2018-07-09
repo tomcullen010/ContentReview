@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>run_hotel_review</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-08 14:32:07</sys_created_on>
+        <sys_id>babb932fdbc71380934f3400ad96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>run_hotel_review</sys_name>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_babb932fdbc71380934f3400ad96198c</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-08 14:32:07</sys_updated_on>
+        <table>x_snc_hotel_author_content_review</table>
+        <ui_policy display_value="Protect fields when request review is complete">f1f81f6bdbc71380934f3400ad96199c</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

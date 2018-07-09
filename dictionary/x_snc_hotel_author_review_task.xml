@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Review Task" max_length="40" name="x_snc_hotel_author_review_task" sizeclass="2" type="collection"/>
+</database>

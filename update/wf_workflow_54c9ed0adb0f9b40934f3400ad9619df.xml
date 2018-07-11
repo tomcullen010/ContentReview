@@ -2,20 +2,21 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"subflows":["60e5e767db0b1380934f3400ad96199c"],"stages":{},"activities":{},"ends":["58aa544cdb5b5380934f3400ad96194d"]}</activity_stages>
+        <activity_stages>{"subflows":["60e5e767db0b1380934f3400ad96199c"],"stages":{},"activities":{},"ends":["657f8150dbdb9380934f3400ad96196e"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
         <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
-        <condition table="x_snc_hotel_author_review_task">short_description=Media Review^EQ<item endquery="false" field="short_description" goto="false" newquery="false" operator="=" or="false" value="Media Review"/>
+        <condition table="x_snc_hotel_author_content_review">state=2^run_media_review=true^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="false" field="run_media_review" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <condition_type>run_match</condition_type>
         <description>Hotel media content review</description>
-        <expected_sequences>d0aa544cdb5b5380934f3400ad96194c,d4aa544cdb5b5380934f3400ad96194b,58aa544cdb5b5380934f3400ad961943,50aa544cdb5b5380934f3400ad96194e,98aa544cdb5b5380934f3400ad961944,5caa544cdb5b5380934f3400ad96194c,58aa544cdb5b5380934f3400ad96194d</expected_sequences>
+        <expected_sequences>297f8150dbdb9380934f3400ad9619c7,6d7f8150dbdb9380934f3400ad9619ba,f2119990dbdb9380934f3400ad9619af,6d7f8150dbdb9380934f3400ad9619bc,657f8150dbdb9380934f3400ad96196e</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>d0aa544cdb5b5380934f3400ad96194c,d4aa544cdb5b5380934f3400ad96194b,58aa544cdb5b5380934f3400ad961943,50aa544cdb5b5380934f3400ad96194e,98aa544cdb5b5380934f3400ad961944,5caa544cdb5b5380934f3400ad96194c,6caa544cdb5b5380934f3400ad96194f,58aa544cdb5b5380934f3400ad96194d,d4aa144cdb5b5380934f3400ad961955,1caa544cdb5b5380934f3400ad961948</full_sequences>
+        <full_sequences>297f8150dbdb9380934f3400ad9619c7,6d7f8150dbdb9380934f3400ad9619ba,f2119990dbdb9380934f3400ad9619af,6d7f8150dbdb9380934f3400ad9619bc,657f8150dbdb9380934f3400ad96196e</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>Review Media Content</name>
@@ -30,16 +31,16 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">d0aa544cdb5b5380934f3400ad96194c</start>
+        <start display_value="Begin">297f8150dbdb9380934f3400ad9619c7</start>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>90aa144cdb5b5380934f3400ad961954</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>d17f8150dbdb9380934f3400ad96196a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:48:04</sys_updated_on>
-        <table>x_snc_hotel_author_review_task</table>
+        <sys_updated_on>2018-07-10 13:41:34</sys_updated_on>
+        <table>x_snc_hotel_author_content_review</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="Review Media Content">54c9ed0adb0f9b40934f3400ad9619df</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">
@@ -53,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>54c9ed0adb0f9b40934f3400ad9619df</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Review Media Content</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
@@ -61,8 +62,8 @@
         <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
         <sys_update_name>wf_workflow_54c9ed0adb0f9b40934f3400ad9619df</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 12:45:18</sys_updated_on>
-        <table>x_snc_hotel_author_review_task</table>
+        <sys_updated_on>2018-07-10 12:18:20</sys_updated_on>
+        <table>x_snc_hotel_author_content_review</table>
         <template>false</template>
         <vars/>
     </wf_workflow>
@@ -82,21 +83,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad96194c</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>297f8150dbdb9380934f3400ad9619c7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d0aa544cdb5b5380934f3400ad96194c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=297f8150dbdb9380934f3400ad9619c7"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">d0aa544cdb5b5380934f3400ad96194c</activity>
+        <activity display_value="Begin">297f8150dbdb9380934f3400ad9619c7</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -110,11 +111,721 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>94aa544cdb5b5380934f3400ad96194c</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>ed7f8150dbdb9380934f3400ad9619c7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Task">9f4d1be5c0a8016400043d34ce066316</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Media Review Task</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>f2119990dbdb9380934f3400ad9619af</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:28:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
+        <x>111</x>
+        <y>239</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f2119990dbdb9380934f3400ad9619af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>11b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>43e56546db0f9b40934f3400ad9619ba</value>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>15b111d0dbdb9380934f3400ad9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>19b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>19b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>1db111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>1db195d0dbdb9380934f3400ad96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>51b111d0dbdb9380934f3400ad9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>55b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>55b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>1. Review media attachments&#13;
+2. If necessary send back to Hotel or send to Copywriters</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>59b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>Media Team Review</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>5db111d0dbdb9380934f3400ad9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>91b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>91b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>95b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>99b111d0dbdb9380934f3400ad9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>9db111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>9db195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d1b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d5b111d0dbdb9380934f3400ad9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>x_snc_hotel_author_review_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d9b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d9b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>ddb111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>ddb195d0dbdb9380934f3400ad96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d5b111d0dbdb9380934f3400ad9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>x_snc_hotel_author_review_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>51b111d0dbdb9380934f3400ad9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>ddb111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d9b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>55b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>15b111d0dbdb9380934f3400ad9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d9b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>99b111d0dbdb9380934f3400ad9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>19b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>1db195d0dbdb9380934f3400ad96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>1db111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>d1b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>9db195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>ddb195d0dbdb9380934f3400ad96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>11b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>43e56546db0f9b40934f3400ad9619ba</value>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>9db111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>59b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>Media Team Review</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>55b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>1. Review media attachments&#13;
+2. If necessary send back to Hotel or send to Copywriters</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>95b111d0dbdb9380934f3400ad9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>19b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>5db111d0dbdb9380934f3400ad9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>91b195d0dbdb9380934f3400ad96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2119990dbdb9380934f3400ad9619af</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>91b111d0dbdb9380934f3400ad9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Media Review Task">f2119990dbdb9380934f3400ad9619af</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:24:31</sys_created_on>
+        <sys_id>59b195d0dbdb9380934f3400ad96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:24:31</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -132,19 +843,19 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad96194d</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>657f8150dbdb9380934f3400ad96196e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
         <x>1388</x>
         <y>290</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=58aa544cdb5b5380934f3400ad96194d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=657f8150dbdb9380934f3400ad96196e"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -161,49 +872,49 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>1caa544cdb5b5380934f3400ad961948</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>ed7f8150dbdb9380934f3400ad9619c3</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
         <x>1061</x>
         <y>197</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1caa544cdb5b5380934f3400ad961948"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ed7f8150dbdb9380934f3400ad9619c3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1caa544cdb5b5380934f3400ad961948</document_key>
+        <document_key>ed7f8150dbdb9380934f3400ad9619c3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>10aa544cdb5b5380934f3400ad961949</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>e17f8150dbdb9380934f3400ad9619c4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>58aa544cdb5b5380934f3400ad961949</value>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <value>2d7f8150dbdb9380934f3400ad9619c4</value>
         <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1caa544cdb5b5380934f3400ad961948</document_key>
+        <document_key>ed7f8150dbdb9380934f3400ad9619c3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>10aa544cdb5b5380934f3400ad961949</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>e17f8150dbdb9380934f3400ad9619c4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>58aa544cdb5b5380934f3400ad961949</value>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <value>2d7f8150dbdb9380934f3400ad9619c4</value>
         <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Hotel or Copywriter Review">1caa544cdb5b5380934f3400ad961948</activity>
+        <activity display_value="Hotel or Copywriter Review">ed7f8150dbdb9380934f3400ad9619c3</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -217,660 +928,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>94aa544cdb5b5380934f3400ad961949</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>697f8150dbdb9380934f3400ad9619c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-    </wf_condition>
-    <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Approval - Group">354e911f0a0a029a00e6a0e6ad74206f</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>3</databus_lookup_id>
-        <height/>
-        <input>{}</input>
-        <is_parent>false</is_parent>
-        <name>MediaBin Team Review</name>
-        <new_activity_definition/>
-        <notes/>
-        <out_of_date>false</out_of_date>
-        <parent/>
-        <pinned>false</pinned>
-        <pinned_version/>
-        <stage/>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>98aa544cdb5b5380934f3400ad961944</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:47:57</sys_updated_on>
-        <timeout>1970-01-01 00:00:00</timeout>
-        <vars/>
-        <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
-        <x>392</x>
-        <y>117</y>
-    </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=98aa544cdb5b5380934f3400ad961944"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>900</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>10aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>14aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>18aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:47:57</sys_updated_on>
-        <value>${parent.assignment_group}</value>
-        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>110</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>1caa544cdb5b5380934f3400ad961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>115</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>1caa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>50aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>reject</value>
-        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>54aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>2050</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
-//&#13;
-// For example:&#13;
-//       var answer = [];&#13;
-//       answer.push('id1');&#13;
-//       answer.push('id2');&#13;
-</value>
-        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1370</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>90aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
-//&#13;
-// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
-// returning the overall approval state for all of the group(s).&#13;
-//&#13;
-// When called, the following variables are available to the script:&#13;
-//&#13;
-//    Overall for all of the groups that are part of this approval activity:&#13;
-//        counts.total = total number of groups that are part of this approval&#13;
-//        counts.approved = # of groups that approved so far&#13;
-//        counts.rejected = # of groups that rejected so far&#13;
-//        counts.requested = # of groups that are pending approval&#13;
-//        counts.not_requested = # of groups that are not pending approval&#13;
-//        counts.not_required = # of groups that approval is not required&#13;
-//&#13;
-//    And for each group:&#13;
-//        groups[group_id].total = total number of users that are part of this group's approval&#13;
-//        groups[group_id].approved = # of users that approved so far&#13;
-//        groups[group_id].rejected = # of users that rejected so far&#13;
-//        groups[group_id].requested = # of users that are pending approval&#13;
-//        groups[group_id].not_requested = # of users that are not pending approval&#13;
-//        groups[group_id].not_required = # of users that approval is not required&#13;
-//&#13;
-//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
-//&#13;
-//        Note: Iterate the groups using:&#13;
-//            for (var id in groups) {&#13;
-//                 var group = groups[id];&#13;
-//                 ...  group.total ...&#13;
-//            }&#13;
-</value>
-        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>94aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>any_each</value>
-        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>98aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>9caa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
-answer = 0;</value>
-        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>900</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d4aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>120</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d8aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>2000</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>dcaa544cdb5b5380934f3400ad961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>0</value>
-        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>dcaa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d4aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>94aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>any_each</value>
-        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>110</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>1caa544cdb5b5380934f3400ad961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>115</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>1caa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>120</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d8aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>18aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:47:57</sys_updated_on>
-        <value>${parent.assignment_group}</value>
-        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>50aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>reject</value>
-        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>900</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>900</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>10aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>14aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>98aa544cdb5b5380934f3400ad961946</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>dcaa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>54aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>9caa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
-answer = 0;</value>
-        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>1370</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>90aa544cdb5b5380934f3400ad961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
-//&#13;
-// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
-// returning the overall approval state for all of the group(s).&#13;
-//&#13;
-// When called, the following variables are available to the script:&#13;
-//&#13;
-//    Overall for all of the groups that are part of this approval activity:&#13;
-//        counts.total = total number of groups that are part of this approval&#13;
-//        counts.approved = # of groups that approved so far&#13;
-//        counts.rejected = # of groups that rejected so far&#13;
-//        counts.requested = # of groups that are pending approval&#13;
-//        counts.not_requested = # of groups that are not pending approval&#13;
-//        counts.not_required = # of groups that approval is not required&#13;
-//&#13;
-//    And for each group:&#13;
-//        groups[group_id].total = total number of users that are part of this group's approval&#13;
-//        groups[group_id].approved = # of users that approved so far&#13;
-//        groups[group_id].rejected = # of users that rejected so far&#13;
-//        groups[group_id].requested = # of users that are pending approval&#13;
-//        groups[group_id].not_requested = # of users that are not pending approval&#13;
-//        groups[group_id].not_required = # of users that approval is not required&#13;
-//&#13;
-//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
-//&#13;
-//        Note: Iterate the groups using:&#13;
-//            for (var id in groups) {&#13;
-//                 var group = groups[id];&#13;
-//                 ...  group.total ...&#13;
-//            }&#13;
-</value>
-        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>2000</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>dcaa544cdb5b5380934f3400ad961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>0</value>
-        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>98aa544cdb5b5380934f3400ad961944</document_key>
-        <order>2050</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
-//&#13;
-// For example:&#13;
-//       var answer = [];&#13;
-//       answer.push('id1');&#13;
-//       answer.push('id2');&#13;
-</value>
-        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
-    </sys_variable_value>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="MediaBin Team Review">98aa544cdb5b5380934f3400ad961944</activity>
-        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
-        <condition_default display_value="Approved">586cdc4c0a0a0b5c00888cdfcb07778b</condition_default>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>true</is_positive>
-        <name>Approved</name>
-        <order>1</order>
-        <short_description>Approval request was approved</short_description>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad961948</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-    </wf_condition>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="MediaBin Team Review">98aa544cdb5b5380934f3400ad961944</activity>
-        <condition>activity.result == 'rejected'</condition>
-        <condition_default display_value="Rejected">586d9d960a0a0b5c00509314d15d50d8</condition_default>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>false</is_positive>
-        <name>Rejected</name>
-        <order>2</order>
-        <short_description>Approval request was rejected</short_description>
-        <skip_during_generate>true</skip_during_generate>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>54aa544cdb5b5380934f3400ad961948</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
@@ -888,101 +950,72 @@ answer = 0;</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>50aa544cdb5b5380934f3400ad96194e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>6d7f8150dbdb9380934f3400ad9619ba</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:47:23</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:28:03</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
-        <x>240</x>
-        <y>208</y>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
+        <x>113</x>
+        <y>114</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=50aa544cdb5b5380934f3400ad96194e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6d7f8150dbdb9380934f3400ad9619ba"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>2caa544cdb5b5380934f3400ad96194e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>Hotel Authoring Request Number: ${number} is waiting for review</value>
-        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
-        <order>500</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>68aa544cdb5b5380934f3400ad96194e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
-</value>
-        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>150</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>a0aa544cdb5b5380934f3400ad96194f</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>217f8150dbdb9380934f3400ad9619bc</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:47:23</sys_updated_on>
-        <value>${parent.assignment_group}</value>
+        <sys_updated_on>2018-07-10 12:26:15</sys_updated_on>
+        <value>${media_approval_group}</value>
         <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>a4aa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>257f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>0</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>617f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value/>
         <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>ecaa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>6d7f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>Request Highlights:&#13;
 &#13;
 Number: ${number}&#13;
@@ -999,57 +1032,86 @@ Sys ID: ${sys_id}</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad96194e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value/>
-        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
-        <order>150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>a0aa544cdb5b5380934f3400ad96194f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:47:23</sys_updated_on>
-        <value>${parent.assignment_group}</value>
-        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>2caa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>a97f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>Hotel Authoring Request Number: ${number} is waiting for review</value>
         <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>e57f8150dbdb9380934f3400ad9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>617f8150dbdb9380934f3400ad9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
+        <value/>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>217f8150dbdb9380934f3400ad9619bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:26:15</sys_updated_on>
+        <value>${media_approval_group}</value>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>a97f8150dbdb9380934f3400ad9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
+        <value>Hotel Authoring Request Number: ${number} is waiting for review</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>ecaa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>6d7f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>Request Highlights:&#13;
 &#13;
 Number: ${number}&#13;
@@ -1066,35 +1128,35 @@ Sys ID: ${sys_id}</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>a4aa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>257f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>0</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>50aa544cdb5b5380934f3400ad96194e</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619ba</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>68aa544cdb5b5380934f3400ad96194e</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>e57f8150dbdb9380934f3400ad9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 </value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Notify MediaBin team">50aa544cdb5b5380934f3400ad96194e</activity>
+        <activity display_value="Notify MediaBin team">6d7f8150dbdb9380934f3400ad9619ba</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1108,89 +1170,11 @@ Sys ID: ${sys_id}</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>a4aa544cdb5b5380934f3400ad96194f</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>a57f8150dbdb9380934f3400ad9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-    </wf_condition>
-    <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Approval Action">50a78fa50a6a803f66d064255f7201a5</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>4</databus_lookup_id>
-        <height/>
-        <input>{}</input>
-        <is_parent>false</is_parent>
-        <name>Request MediaBin Approval</name>
-        <new_activity_definition/>
-        <notes/>
-        <out_of_date>false</out_of_date>
-        <parent/>
-        <pinned>false</pinned>
-        <pinned_version/>
-        <stage/>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad961943</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <timeout>1970-01-01 00:00:00</timeout>
-        <vars/>
-        <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
-        <x>32</x>
-        <y>206</y>
-    </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=58aa544cdb5b5380934f3400ad961943"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>58aa544cdb5b5380934f3400ad961943</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa544cdb5b5380934f3400ad961943</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>requested</value>
-        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>58aa544cdb5b5380934f3400ad961943</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa544cdb5b5380934f3400ad961943</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>requested</value>
-        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
-    </sys_variable_value>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Request MediaBin Approval">58aa544cdb5b5380934f3400ad961943</activity>
-        <condition>true</condition>
-        <condition_default/>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>true</is_positive>
-        <name>Always</name>
-        <order>0</order>
-        <short_description/>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -1208,58 +1192,30 @@ Sys ID: ${sys_id}</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d4aa144cdb5b5380934f3400ad961955</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>e17f8150dbdb9380934f3400ad96196c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
         <x>854</x>
         <y>227</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d4aa144cdb5b5380934f3400ad961955"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e17f8150dbdb9380934f3400ad96196c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d4aa144cdb5b5380934f3400ad961955</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>10aa144cdb5b5380934f3400ad961956</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>0</value>
-        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d4aa144cdb5b5380934f3400ad961955</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa144cdb5b5380934f3400ad961955</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>run_hotel_review=true^ORrun_copywriter_review=true^EQ</value>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d4aa144cdb5b5380934f3400ad961955</document_key>
+        <document_key>e17f8150dbdb9380934f3400ad96196c</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa144cdb5b5380934f3400ad961956</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>657f8150dbdb9380934f3400ad96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -1277,43 +1233,71 @@ Sys ID: ${sys_id}</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d4aa144cdb5b5380934f3400ad961955</document_key>
+        <document_key>e17f8150dbdb9380934f3400ad96196c</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa144cdb5b5380934f3400ad961955</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>697f8150dbdb9380934f3400ad96196c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>run_hotel_review=true^ORrun_copywriter_review=true^EQ</value>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d4aa144cdb5b5380934f3400ad961955</document_key>
+        <document_key>e17f8150dbdb9380934f3400ad96196c</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>10aa144cdb5b5380934f3400ad961956</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>a17f8150dbdb9380934f3400ad96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d4aa144cdb5b5380934f3400ad961955</document_key>
+        <document_key>e17f8150dbdb9380934f3400ad96196c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>697f8150dbdb9380934f3400ad96196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
+        <value>run_hotel_review=true^ORrun_copywriter_review=true^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e17f8150dbdb9380934f3400ad96196c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>a17f8150dbdb9380934f3400ad96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e17f8150dbdb9380934f3400ad96196c</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa144cdb5b5380934f3400ad961956</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>657f8150dbdb9380934f3400ad96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -1330,7 +1314,7 @@ Sys ID: ${sys_id}</value>
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Send to Hotel and/or Copywriters">d4aa144cdb5b5380934f3400ad961955</activity>
+        <activity display_value="Send to Hotel and/or Copywriters">e17f8150dbdb9380934f3400ad96196c</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -1344,14 +1328,14 @@ Sys ID: ${sys_id}</value>
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d8aa144cdb5b5380934f3400ad961956</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>6d7f8150dbdb9380934f3400ad96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Send to Hotel and/or Copywriters">d4aa144cdb5b5380934f3400ad961955</activity>
+        <activity display_value="Send to Hotel and/or Copywriters">e17f8150dbdb9380934f3400ad96196c</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -1365,11 +1349,11 @@ Sys ID: ${sys_id}</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa144cdb5b5380934f3400ad961956</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>e97f8150dbdb9380934f3400ad96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -1387,49 +1371,49 @@ Sys ID: ${sys_id}</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa544cdb5b5380934f3400ad96194c</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>6d7f8150dbdb9380934f3400ad9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
         <x>640</x>
         <y>96</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=5caa544cdb5b5380934f3400ad96194c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6d7f8150dbdb9380934f3400ad9619bc"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5caa544cdb5b5380934f3400ad96194c</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619bc</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>dcaa544cdb5b5380934f3400ad96194c</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>617f8150dbdb9380934f3400ad9619bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>state=3^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5caa544cdb5b5380934f3400ad96194c</document_key>
+        <document_key>6d7f8150dbdb9380934f3400ad9619bc</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>dcaa544cdb5b5380934f3400ad96194c</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>617f8150dbdb9380934f3400ad9619bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
         <value>state=3^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Media Review closed complete">5caa544cdb5b5380934f3400ad96194c</activity>
+        <activity display_value="Set Media Review closed complete">6d7f8150dbdb9380934f3400ad9619bc</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1443,11 +1427,11 @@ Sys ID: ${sys_id}</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d0aa544cdb5b5380934f3400ad96194d</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>e57f8150dbdb9380934f3400ad9619bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -1465,49 +1449,49 @@ Sys ID: ${sys_id}</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>6caa544cdb5b5380934f3400ad96194f</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>a17f8150dbdb9380934f3400ad9619c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
         <x>645</x>
         <y>202</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=6caa544cdb5b5380934f3400ad96194f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a17f8150dbdb9380934f3400ad9619c3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>6caa544cdb5b5380934f3400ad96194f</document_key>
+        <document_key>a17f8150dbdb9380934f3400ad9619c3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>ecaa544cdb5b5380934f3400ad96194f</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>257f8150dbdb9380934f3400ad9619c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>6caa544cdb5b5380934f3400ad96194f</document_key>
+        <document_key>a17f8150dbdb9380934f3400ad9619c3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>ecaa544cdb5b5380934f3400ad96194f</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>257f8150dbdb9380934f3400ad9619c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Media Review Closed Incomplete">6caa544cdb5b5380934f3400ad96194f</activity>
+        <activity display_value="Set Media Review Closed Incomplete">a17f8150dbdb9380934f3400ad9619c3</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1521,237 +1505,126 @@ Sys ID: ${sys_id}</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>e0aa544cdb5b5380934f3400ad961950</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>297f8150dbdb9380934f3400ad9619c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-    </wf_condition>
-    <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>9</databus_lookup_id>
-        <height/>
-        <input>{}</input>
-        <is_parent>false</is_parent>
-        <name>Set State to Work in Progress</name>
-        <new_activity_definition/>
-        <notes/>
-        <out_of_date>false</out_of_date>
-        <parent/>
-        <pinned>false</pinned>
-        <pinned_version/>
-        <stage/>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>d4aa544cdb5b5380934f3400ad96194b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <timeout>1970-01-01 00:00:00</timeout>
-        <vars/>
-        <width/>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
-        <x>37</x>
-        <y>112</y>
-    </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d4aa544cdb5b5380934f3400ad96194b"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d4aa544cdb5b5380934f3400ad96194b</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad96194b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>state=2^EQ</value>
-        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d4aa544cdb5b5380934f3400ad96194b</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad96194b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <value>state=2^EQ</value>
-        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
-    </sys_variable_value>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set State to Work in Progress">d4aa544cdb5b5380934f3400ad96194b</activity>
-        <condition>true</condition>
-        <condition_default/>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>true</is_positive>
-        <name>Always</name>
-        <order>0</order>
-        <short_description/>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>5caa544cdb5b5380934f3400ad96194b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">d8aa144cdb5b5380934f3400ad961956</condition>
-        <from display_value="Send to Hotel and/or Copywriters">d4aa144cdb5b5380934f3400ad961955</from>
+        <condition display_value="Always">a57f8150dbdb9380934f3400ad9619bc</condition>
+        <from display_value="Notify MediaBin team">6d7f8150dbdb9380934f3400ad9619ba</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>20aa544cdb5b5380934f3400ad961952</sys_id>
+        <sys_created_on>2018-07-10 12:28:08</sys_created_on>
+        <sys_id>1e82ddd0dbdb9380934f3400ad961907</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="End">58aa544cdb5b5380934f3400ad96194d</to>
+        <sys_updated_on>2018-07-10 12:28:08</sys_updated_on>
+        <to display_value="Create Media Review Task">f2119990dbdb9380934f3400ad9619af</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">94aa544cdb5b5380934f3400ad961949</condition>
-        <from display_value="Hotel or Copywriter Review">1caa544cdb5b5380934f3400ad961948</from>
+        <condition display_value="Always">ed7f8150dbdb9380934f3400ad9619c7</condition>
+        <from display_value="Begin">297f8150dbdb9380934f3400ad9619c7</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>28aa544cdb5b5380934f3400ad961952</sys_id>
+        <sys_created_on>2018-07-10 12:28:06</sys_created_on>
+        <sys_id>21829dd0dbdb9380934f3400ad96196f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="End">58aa544cdb5b5380934f3400ad96194d</to>
+        <sys_updated_on>2018-07-10 12:28:06</sys_updated_on>
+        <to display_value="Notify MediaBin team">6d7f8150dbdb9380934f3400ad9619ba</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">94aa544cdb5b5380934f3400ad96194c</condition>
-        <from display_value="Begin">d0aa544cdb5b5380934f3400ad96194c</from>
+        <condition display_value="Yes">e97f8150dbdb9380934f3400ad96196d</condition>
+        <from display_value="Send to Hotel and/or Copywriters">e17f8150dbdb9380934f3400ad96196c</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>60aa544cdb5b5380934f3400ad961953</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>357f8150dbdb9380934f3400ad9619ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="Set State to Work in Progress">d4aa544cdb5b5380934f3400ad96194b</to>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <to display_value="Hotel or Copywriter Review">ed7f8150dbdb9380934f3400ad9619c3</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Rejected">54aa544cdb5b5380934f3400ad961948</condition>
-        <from display_value="MediaBin Team Review">98aa544cdb5b5380934f3400ad961944</from>
+        <condition display_value="No">6d7f8150dbdb9380934f3400ad96196d</condition>
+        <from display_value="Send to Hotel and/or Copywriters">e17f8150dbdb9380934f3400ad96196c</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>64aa544cdb5b5380934f3400ad961951</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>b17f8150dbdb9380934f3400ad9619ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <to display_value="Set Media Review Closed Incomplete">6caa544cdb5b5380934f3400ad96194f</to>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <to display_value="End">657f8150dbdb9380934f3400ad96196e</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">a4aa544cdb5b5380934f3400ad96194f</condition>
-        <from display_value="Notify MediaBin team">50aa544cdb5b5380934f3400ad96194e</from>
+        <condition display_value="Always">297f8150dbdb9380934f3400ad9619c3</condition>
+        <from display_value="Set Media Review Closed Incomplete">a17f8150dbdb9380934f3400ad9619c3</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>64aa544cdb5b5380934f3400ad961952</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>bd7f8150dbdb9380934f3400ad9619ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="MediaBin Team Review">98aa544cdb5b5380934f3400ad961944</to>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <to display_value="Send to Hotel and/or Copywriters">e17f8150dbdb9380934f3400ad96196c</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">d0aa544cdb5b5380934f3400ad961944</condition>
-        <from display_value="Request MediaBin Approval">58aa544cdb5b5380934f3400ad961943</from>
+        <condition display_value="Always">59b195d0dbdb9380934f3400ad96190e</condition>
+        <from display_value="Create Media Review Task">f2119990dbdb9380934f3400ad9619af</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>6caa544cdb5b5380934f3400ad961951</sys_id>
+        <sys_created_on>2018-07-10 13:23:42</sys_created_on>
+        <sys_id>d44f11dcdbdb9380934f3400ad961929</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <to display_value="Notify MediaBin team">50aa544cdb5b5380934f3400ad96194e</to>
+        <sys_updated_on>2018-07-10 13:23:42</sys_updated_on>
+        <to display_value="Set Media Review closed complete">6d7f8150dbdb9380934f3400ad9619bc</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">58aa144cdb5b5380934f3400ad961956</condition>
-        <from display_value="Send to Hotel and/or Copywriters">d4aa144cdb5b5380934f3400ad961955</from>
+        <condition display_value="Always">697f8150dbdb9380934f3400ad9619c4</condition>
+        <from display_value="Hotel or Copywriter Review">ed7f8150dbdb9380934f3400ad9619c3</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>a0aa544cdb5b5380934f3400ad961952</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>f57f8150dbdb9380934f3400ad9619ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="Hotel or Copywriter Review">1caa544cdb5b5380934f3400ad961948</to>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <to display_value="End">657f8150dbdb9380934f3400ad96196e</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">e0aa544cdb5b5380934f3400ad961950</condition>
-        <from display_value="Set Media Review Closed Incomplete">6caa544cdb5b5380934f3400ad96194f</from>
+        <condition display_value="Always">e57f8150dbdb9380934f3400ad9619bd</condition>
+        <from display_value="Set Media Review closed complete">6d7f8150dbdb9380934f3400ad9619bc</from>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>a8aa544cdb5b5380934f3400ad961951</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>fd7f8150dbdb9380934f3400ad9619c9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <to display_value="Send to Hotel and/or Copywriters">d4aa144cdb5b5380934f3400ad961955</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">d0aa544cdb5b5380934f3400ad96194d</condition>
-        <from display_value="Set Media Review closed complete">5caa544cdb5b5380934f3400ad96194c</from>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>acaa544cdb5b5380934f3400ad961952</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="End">58aa544cdb5b5380934f3400ad96194d</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Approved">d0aa544cdb5b5380934f3400ad961948</condition>
-        <from display_value="MediaBin Team Review">98aa544cdb5b5380934f3400ad961944</from>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>e4aa544cdb5b5380934f3400ad961951</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <to display_value="Set Media Review closed complete">5caa544cdb5b5380934f3400ad96194c</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">5caa544cdb5b5380934f3400ad96194b</condition>
-        <from display_value="Set State to Work in Progress">d4aa544cdb5b5380934f3400ad96194b</from>
-        <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:25</sys_created_on>
-        <sys_id>e8aa544cdb5b5380934f3400ad961952</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:25</sys_updated_on>
-        <to display_value="Request MediaBin Approval">58aa544cdb5b5380934f3400ad961943</to>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
+        <to display_value="End">657f8150dbdb9380934f3400ad96196e</to>
     </wf_transition>
     <wf_workflow_instance action="INSERT_OR_UPDATE">
-        <activity display_value="Hotel or Copywriter Review">1caa544cdb5b5380934f3400ad961948</activity>
+        <activity display_value="Hotel or Copywriter Review">ed7f8150dbdb9380934f3400ad9619c3</activity>
         <return_map/>
         <stage/>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>58aa544cdb5b5380934f3400ad961949</sys_id>
+        <sys_created_on>2018-07-10 12:14:43</sys_created_on>
+        <sys_id>2d7f8150dbdb9380934f3400ad9619c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
+        <sys_updated_on>2018-07-10 12:14:43</sys_updated_on>
         <workflow display_value="Hotel or Copywriter Review">60e5e767db0b1380934f3400ad96199c</workflow>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
     </wf_workflow_instance>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-09 13:45:24</sys_created_on>
-        <sys_id>14aa144cdb5b5380934f3400ad961954</sys_id>
+        <sys_created_on>2018-07-10 12:14:42</sys_created_on>
+        <sys_id>297f8150dbdb9380934f3400ad96196a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-09 13:45:24</sys_updated_on>
-        <workflow_version display_value="Review Media Content">90aa144cdb5b5380934f3400ad961954</workflow_version>
+        <sys_updated_on>2018-07-10 12:14:42</sys_updated_on>
+        <workflow_version display_value="Review Media Content">d17f8150dbdb9380934f3400ad96196a</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=54c9ed0adb0f9b40934f3400ad9619df^sys_id!=90aa144cdb5b5380934f3400ad961954">
+    <wf_workflow_version action="update_multiple" query="workflow=54c9ed0adb0f9b40934f3400ad9619df^sys_id!=d17f8150dbdb9380934f3400ad96196a">
         <published>false</published>
     </wf_workflow_version>
 </record_update>

@@ -10,15 +10,25 @@
                 <element label="Image and Content Job" sequence="30" value="Image and Content"/>
             </choice>
         </element>
-        <element label="Copywriter approved" max_length="40" name="copywriter_approved" type="boolean"/>
-        <element label="Hotel approved" max_length="40" name="hotel_approved" type="boolean"/>
+        <element label="Done in a day" max_length="40" name="done_in_a_day" type="boolean"/>
         <element default="GCG MediaBin Team" label="Media Approval Group" max_length="32" name="media_approval_group" reference="sys_user_group" type="reference"/>
         <element label="Media approved" max_length="40" name="media_approved" type="boolean"/>
         <element default="0" label="Reviews in progress" max_length="40" name="reviews_in_progress" type="integer"/>
         <element label="Room Type" mandatory="true" max_length="32" name="room_type" reference="x_snc_hilton_core_room_type" type="reference"/>
         <element label="Run content review" max_length="40" name="run_content_review" type="boolean"/>
-        <element label="Run copywriter review" max_length="40" name="run_copywriter_review" type="boolean"/>
-        <element label="Run hotel review" max_length="40" name="run_hotel_review" type="boolean"/>
         <element label="Run media review" max_length="40" name="run_media_review" type="boolean"/>
+        <element choice="1" label="Secondary content review" max_length="40" name="secondary_content_review" type="choice">
+            <choice>
+                <element label="Hotel" sequence="0" value="hotel"/>
+                <element label="Copywriter" sequence="1" value="copywriter"/>
+            </choice>
+        </element>
+        <element choice="1" label="Secondary media review" max_length="40" name="secondary_media_review" type="choice">
+            <choice>
+                <element label="Hotel" sequence="0" value="hotel"/>
+                <element label="Copywriter" sequence="1" value="copywriter"/>
+            </choice>
+        </element>
+        <element label="Workflow Stage" max_length="80" name="workflow_stage" type="workflow"/>
     </element>
 </database>

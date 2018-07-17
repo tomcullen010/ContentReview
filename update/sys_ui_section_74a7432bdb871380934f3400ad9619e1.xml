@@ -5,83 +5,83 @@
             <element>run_content_review</element>
             <position>0</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>c5a7832bdb871380934f3400ad9619b2</sys_id>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>a40ea91adbdbdb80699d3ecf9d9619f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>run_media_review</element>
+            <element>secondary_content_review</element>
             <position>1</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>49a7832bdb871380934f3400ad9619b2</sys_id>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>280ea91adbdbdb80699d3ecf9d9619f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>run_hotel_review</element>
+            <element>content_approved</element>
             <position>2</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>c9a7832bdb871380934f3400ad9619b2</sys_id>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>a80ea91adbdbdb80699d3ecf9d9619f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>run_copywriter_review</element>
-            <position>3</position>
-            <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>4da7832bdb871380934f3400ad9619b2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
-            <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>cda7832bdb871380934f3400ad9619b2</sys_id>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>2c0ea91adbdbdb80699d3ecf9d9619f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>content_approved</element>
-            <position>5</position>
+            <element>run_media_review</element>
+            <position>4</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>41a7832bdb871380934f3400ad9619b3</sys_id>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>ac0ea91adbdbdb80699d3ecf9d9619f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>secondary_media_review</element>
+            <position>5</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>200ea91adbdbdb80699d3ecf9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,41 +89,13 @@
             <element>media_approved</element>
             <position>6</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>c1a7832bdb871380934f3400ad9619b3</sys_id>
+            <sys_created_on>2018-07-16 19:36:01</sys_created_on>
+            <sys_id>a00ea91adbdbdb80699d3ecf9d9619fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>hotel_approved</element>
-            <position>7</position>
-            <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>45a7832bdb871380934f3400ad9619b3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
-            <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>copywriter_approved</element>
-            <position>8</position>
-            <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2018-07-08 13:04:20</sys_created_on>
-            <sys_id>c5a7832bdb871380934f3400ad9619b3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Reviews and Approvals" display_value="Reviews and Approvals" name="x_snc_hotel_author_content_review" sys_domain="global" view="Default view">74a7432bdb871380934f3400ad9619e1</sys_ui_section>
-            <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2018-07-08 13:04:20</sys_updated_on>
+            <sys_updated_on>2018-07-16 19:36:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

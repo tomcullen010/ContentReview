@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="secondary_media_review" label="Secondary media review" language="en" table="x_snc_hotel_author_content_review">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>secondary_media_review</element>
+            <help/>
+            <hint/>
+            <label>Secondary media review</label>
+            <language>en</language>
+            <name>x_snc_hotel_author_content_review</name>
+            <plural>Secondary media reviews</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2018-07-16 19:32:11</sys_created_on>
+            <sys_id>ac2d2dd6dbdbdb80699d3ecf9d96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Secondary media review</sys_name>
+            <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_hotel_author_content_review_secondary_media_review_en</sys_update_name>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2018-07-16 19:32:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

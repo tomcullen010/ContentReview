@@ -55,14 +55,14 @@
         <sys_created_by>tom.cullen</sys_created_by>
         <sys_created_on>2018-07-03 10:59:54</sys_created_on>
         <sys_id>27c574c6db4b9b40934f3400ad9619fb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Content Type</sys_name>
         <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_hotel_author_content_review_content_type</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-03 11:07:34</sys_updated_on>
+        <sys_updated_on>2018-07-16 13:27:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

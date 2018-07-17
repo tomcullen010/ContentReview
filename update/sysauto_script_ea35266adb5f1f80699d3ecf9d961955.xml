@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Remove Attachments from completed content requests</name>
+        <run_as display_value="Tom Cullen">294294bddb0b5b40934f3400ad961914</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-07-17 18:15:45</run_start>
+        <run_time>1970-01-01 06:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[//Sample script to show nightly attachment cleanup
+//This is looking for data older than 7 days ... 
+var count = 0;
+var gr = new GlideRecord("sys_attachment");
+gr.addQuery("table_name=x_snc_hotel_author_content_review^sys_created_on<=javascript:gs.beginningOfLast7Days()^ORDERBYDESCsys_updated_on");
+gr.query();
+while(gr.next()) {
+	count++;
+	gs.info('File Name: ' + gr.file_name + ' - Content Type: ' + gr.content_type + ' - Created: ' + gr.sys_created_on);
+}
+gs.info('record count = ' + count);
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2018-07-17 18:58:02</sys_created_on>
+        <sys_id>ea35266adb5f1f80699d3ecf9d961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remove Attachments from completed content requests</sys_name>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sysauto_script_ea35266adb5f1f80699d3ecf9d961955</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2018-07-17 18:58:02</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

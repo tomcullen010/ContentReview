@@ -23,19 +23,15 @@
         <name>Mark Approved</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var parent = current.parent.getRefRecord();  //update media secondary review on request
-if (parent.contact_type == 'media'){         //send to copywriters
+        <script><![CDATA[var parent = current.parent.getRefRecord();  //update parent
+if (parent.contact_type == 'media'){         // 
 	parent.media_approved = true;
 } else {
 	parent.content_approved = true;
 }
 parent.update(); 
 
-current.state=3;  //send to copywriters
-current.run_hotel_review = false;
-current.hotel_approved = false;
-current.run_copywriter_review = false;
-current.copywriter_approved = false;
+current.state=3;  //set approved
 current.update();]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -47,7 +43,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>74c98beadbdf1f80699d3ecf9d9619cd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Mark Approved</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
@@ -55,7 +51,7 @@ current.update();]]></script>
         <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
         <sys_update_name>sys_ui_action_74c98beadbdf1f80699d3ecf9d9619cd</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-17 21:08:20</sys_updated_on>
+        <sys_updated_on>2018-07-17 21:47:02</sys_updated_on>
         <table>x_snc_hotel_author_review_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

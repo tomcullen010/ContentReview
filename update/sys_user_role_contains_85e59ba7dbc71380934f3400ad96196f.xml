@@ -2,7 +2,7 @@
 <record_update table="sys_user_role_contains">
     <sys_user_role_contains action="INSERT_OR_UPDATE">
         <contains display_value="x_snc_hilton_core.base_user" name="x_snc_hilton_core.base_user">de97e435db8b5b40934f3400ad961904</contains>
-        <role display_value="x_snc_hotel_author.content_review_user" name="x_snc_hotel_author.content_review_user">935ce5b5db8f5b40934f3400ad961942</role>
+        <role display_value="x_snc_hotel_author.content_reviewer" name="x_snc_hotel_author.content_reviewer">935ce5b5db8f5b40934f3400ad961942</role>
         <sys_class_name>sys_user_role_contains</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
         <sys_created_on>2018-07-08 14:06:36</sys_created_on>

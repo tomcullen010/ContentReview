@@ -14,7 +14,7 @@
         <sys_update_name>sys_security_acl_role_92a20804db1b5380934f3400ad96198a</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
         <sys_updated_on>2018-07-09 12:00:41</sys_updated_on>
-        <sys_user_role display_value="x_snc_hotel_author.content_review_user" name="x_snc_hotel_author.content_review_user">935ce5b5db8f5b40934f3400ad961942</sys_user_role>
+        <sys_user_role display_value="x_snc_hotel_author.content_reviewer" name="x_snc_hotel_author.content_reviewer">935ce5b5db8f5b40934f3400ad961942</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

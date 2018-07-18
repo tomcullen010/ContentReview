@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>sys-help-tours</category>
+        <content><![CDATA[<div>
+ <h1 class="title topictitle1">Edit a guided tour</h1>
+ <div class="body taskbody role-sn_tourbuilder.tour_admin"> 
+  <ol class="ol steps"><li class="li step stepexpand"> <span class="ph cmd">In the Guided Tour form, take any of the following actions.</span> 
+    <ul class="ul choices" id="sys_embedded_tour_guide-normal__d32558e69"><li class="li choice">Edit the name.</li><li class="li choice">Enter a different page name in the <span class="ph uicontrol">Context</span> field. For example, if the form page is listed and you want the user to start on the list view to enter a new record.</li><li class="li choice">Enter or edit the description.</li><li class="li choice">Clear the <span class="ph uicontrol">Active</span> check box to disable the guided tour. Consider inactivating the tour until you are finished editing it. Select the check box to enable the tour when it is ready.</li></ul> </li><li class="li step stepexpand"> <span class="ph cmd">To apply text formatting in the step instructions, click the step number in the <span class="ph uicontrol">Guided Tour Steps</span> related list and complete the following steps.</span> 
+    <ol class="ol substeps" id="sys_embedded_tour_guide-normal__d32558e99"><li class="li substep substepexpand"> <span class="ph cmd">Scroll to the <span class="ph uicontrol">Content</span> HTML formatter.</span> </li><li class="li substep substepexpand"> <span class="ph cmd">Edit the content and apply formatting as appropriate.</span> 
+      <div class="itemgroup info"> 
+       <div class="note note"> 
+        <span class="notetitle">Note:</span> Do not add images or video to the text. These media types do not render in the callout text box. 
+       </div> 
+      </div> </li><li class="li substep substepexpand"> <span class="ph cmd">Click <span class="ph uicontrol">Update</span>.</span> </li></ol> </li><li class="li step stepexpand"> <span class="ph cmd">To work with the tour steps, click <span class="ph uicontrol">Edit with Designer</span> in the form header.</span> 
+    <div class="itemgroup stepresult">
+      The target UI page opens in the GTD in a new tab or window. 
+    </div> </li></ol> 
+ </div>
+ <div class="related-links role-sn_tourbuilder.tour_admin"> 
+  <div class="relinfo"> 
+   <div class="reltitle">
+     Related information 
+    <br /> 
+    <div> 
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Guided-Tours&amp;version&#61;kingston" target="_blank">Guided tours</a> 
+    </div> 
+    <div> 
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:GTD-Interface&amp;version&#61;kingston" target="_blank">Guided Tour Designer interface</a> 
+    </div> 
+    <div> 
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Guided-Tour-Edit&amp;version&#61;kingston" target="_blank">Edit a guided tour</a> 
+    </div> 
+   </div> 
+  </div> 
+ </div>
+</div>]]></content>
+        <last_sync>2018-07-18 13:18:06</last_sync>
+        <modifier>normal</modifier>
+        <name>sys_embedded_tour_guide-normal</name>
+        <page>sys_embedded_tour_guide</page>
+        <product>1</product>
+        <qualifier/>
+        <role display_value="sn_tourbuilder.tour_admin" name="sn_tourbuilder.tour_admin">1f758db1933022007b59d5dbb67ffb69</role>
+        <role_order>10</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-07-18 13:18:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>50ba6ab2db5f5f80699d3ecf9d96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_embedded_tour_guide-normal</sys_name>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_embedded_help_content_50ba6ab2db5f5f80699d3ecf9d96191a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-07-18 13:18:06</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=50ba6ab2db5f5f80699d3ecf9d96191a"/>
+</record_update>

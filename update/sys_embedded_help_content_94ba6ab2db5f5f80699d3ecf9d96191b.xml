@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>sys-help-tours</category>
+        <content><![CDATA[<div>
+ <h1 class="title topictitle1">Guided tours</h1>
+ <div class="body conbody role-sn_tourbuilder.tour_admin"> 
+  <p class="p"><span class="ph">A guided tour demonstrates to users how to use a feature. For example, an administrator can create a task demo with callouts to demonstrate how to perform the task.</span></p> 
+  <p class="p">The guided tour is performed within the instance. If the guided tour provides instructions on inserting a record, at the end of the tour the record exists in the database. For example, if an HR manager completes a guided tour to create an HR department report, that report becomes available to everyone in HR.</p> 
+  <p class="p">A user accesses a guided tour by navigating to a page that has one. If the user has a role that is assigned to the tour, the Help panel opens and a <span class="ph uicontrol">Take a Tour</span> button appears at the bottom. If more than one tour is available for the page, the user selects the desired tour from a choice list.</p> 
+  <p class="p">Guided tours require careful planning before entering the tour into the instance. You can create an outline and include any assumptions to guide you when you create the guided tour. List each step, callout, and trigger.</p> 
+  <p class="p"><span class="ph">Use the Guided Tour Designer (GTD) to add, delete, and reorganize guided tour steps. Use the Guided Tour form only to perform tasks you cannot do easily from the GTD.</span></p> 
+ </div>
+ <div class="related-links role-sn_tourbuilder.tour_admin"> 
+  <div class="relinfo"> 
+   <div class="reltitle">
+     Related information 
+    <br /> 
+    <div> 
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Guided-Tours&amp;version&#61;kingston" target="_blank">Guided tours</a> 
+    </div> 
+    <div> 
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Guided-Tour-Tips&amp;version&#61;kingston" target="_blank">Guided tour advice</a> 
+    </div> 
+    <div> 
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:GTD-Interface&amp;version&#61;kingston" target="_blank">Guided Tour Designer interface</a> 
+    </div> 
+   </div> 
+  </div> 
+ </div>
+</div>]]></content>
+        <last_sync>2018-07-18 13:18:06</last_sync>
+        <modifier>normal</modifier>
+        <name>sys_embedded_tour_guide_list-normal</name>
+        <page>sys_embedded_tour_guide_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role display_value="sn_tourbuilder.tour_admin" name="sn_tourbuilder.tour_admin">1f758db1933022007b59d5dbb67ffb69</role>
+        <role_order>10</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-07-18 13:18:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>94ba6ab2db5f5f80699d3ecf9d96191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_embedded_tour_guide_list-normal</sys_name>
+        <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
+        <sys_update_name>sys_embedded_help_content_94ba6ab2db5f5f80699d3ecf9d96191b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-07-18 13:18:06</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=94ba6ab2db5f5f80699d3ecf9d96191b"/>
+</record_update>

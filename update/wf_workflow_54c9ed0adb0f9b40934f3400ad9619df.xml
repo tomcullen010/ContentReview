@@ -35,12 +35,12 @@
         <sys_created_by>tom.cullen</sys_created_by>
         <sys_created_on>2018-07-17 22:00:33</sys_created_on>
         <sys_id>a3a8d7eadb135f80699d3ecf9d961917</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-17 22:02:05</sys_updated_on>
+        <sys_updated_on>2018-07-18 07:46:20</sys_updated_on>
         <table>x_snc_hotel_author_content_review</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="Review Media Content">54c9ed0adb0f9b40934f3400ad9619df</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

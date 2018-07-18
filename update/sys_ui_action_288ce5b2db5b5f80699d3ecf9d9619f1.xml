@@ -5,9 +5,9 @@
         <active>true</active>
         <client>false</client>
         <comments/>
-        <condition>gs.hasRole('itil') &amp;&amp; current.assigned_to.nil()</condition>
-        <form_action>true</form_action>
-        <form_button>true</form_button>
+        <condition>false</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_style/>
@@ -20,33 +20,30 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Assign to me</name>
+        <name>Assign to Me - disable</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.assigned_to = gs.getUserID();
-current.state = 2;  //set to work in progress
-current.update();
-action.setRedirectURL(current);]]></script>
-        <show_insert>false</show_insert>
+        <script/>
+        <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>tom.cullen</sys_created_by>
-        <sys_created_on>2018-07-02 20:00:05</sys_created_on>
+        <sys_created_on>2018-07-18 08:47:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>261dedf5db8f5b40934f3400ad96197c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Assign to me</sys_name>
+        <sys_id>288ce5b2db5b5f80699d3ecf9d9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign to Me - disable</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
-        <sys_update_name>sys_ui_action_261dedf5db8f5b40934f3400ad96197c</sys_update_name>
+        <sys_update_name>sys_ui_action_288ce5b2db5b5f80699d3ecf9d9619f1</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-18 08:41:11</sys_updated_on>
-        <table>x_snc_hotel_author_review_task</table>
+        <sys_updated_on>2018-07-18 08:47:10</sys_updated_on>
+        <table>x_snc_hotel_author_content_review</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>

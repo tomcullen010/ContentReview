@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Review Task" max_length="40" name="x_snc_hotel_author_review_task" sizeclass="1" type="collection">
+    <element extends="task" label="Review Task" max_length="40" name="x_snc_hotel_author_review_task" sizeclass="33" type="collection">
         <element label="Copywriter approved" max_length="40" name="copywriter_approved" type="boolean"/>
         <element label="Hotel approved" max_length="40" name="hotel_approved" type="boolean"/>
         <element label="Run copywriter review" max_length="40" name="run_copywriter_review" type="boolean"/>

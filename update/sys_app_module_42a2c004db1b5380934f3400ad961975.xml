@@ -15,7 +15,7 @@
         <mobile_title>Review Tasks</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_snc_hotel_author_review_task</name>
-        <order>400</order>
+        <order>500</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>42a2c004db1b5380934f3400ad961975</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>All content review tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
         <sys_update_name>sys_app_module_42a2c004db1b5380934f3400ad961975</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2018-07-18 13:00:08</sys_updated_on>
+        <sys_updated_on>2018-07-25 11:46:54</sys_updated_on>
         <timeline_page/>
         <title>All content review tasks</title>
         <uncancelable>false</uncancelable>

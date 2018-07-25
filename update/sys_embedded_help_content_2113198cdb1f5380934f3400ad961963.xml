@@ -4,7 +4,7 @@
         <active>true</active>
         <category>change-me</category>
         <content><![CDATA[ <h1 class="title topictitle1">Assessment metric types</h1>  <div class="body conbody">  <p class="p">Assessment metrics enable you to evaluate, score, and rank records from a table in a   system.</p>  <p class="p">Review the existing assessment metric types and configure them to align with your business   needs.</p>  <p class="p">To modify an assessment metric type, click the assessment metric type name.</p>  <p class="p">To create an assessment metric type, click <span class="ph uicontrol">New</span>.</p> </div>]]></content>
-        <last_sync>2018-07-09 17:52:04</last_sync>
+        <last_sync>2018-07-24 17:52:05</last_sync>
         <modifier>normal</modifier>
         <name>asmt_metric_type_list-normal</name>
         <page>asmt_metric_type_list</page>
@@ -19,14 +19,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2113198cdb1f5380934f3400ad961963</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>asmt_metric_type_list-normal</sys_name>
         <sys_package display_value="Hotel Authoring" source="x_snc_hotel_author">411b2975db8f5b40934f3400ad9619a0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Authoring">411b2975db8f5b40934f3400ad9619a0</sys_scope>
         <sys_update_name>sys_embedded_help_content_2113198cdb1f5380934f3400ad961963</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-07-09 17:52:04</sys_updated_on>
+        <sys_updated_on>2018-07-24 17:52:05</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=2113198cdb1f5380934f3400ad961963"/>

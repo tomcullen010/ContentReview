@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_snc_hilton_core_base" label="Content Review" max_length="40" name="x_snc_hotel_author_content_review" sizeclass="23" type="collection">
+    <element extends="x_snc_hilton_core_base" label="Content Review" max_length="40" name="x_snc_hotel_author_content_review" sizeclass="26" type="collection">
         <element default="GCG Content Team" label="Content Approval Group" max_length="32" name="content_approval_group" reference="sys_user_group" type="reference"/>
         <element label="Content approved" max_length="40" name="content_approved" type="boolean"/>
         <element choice="1" label="Content Type" mandatory="true" max_length="40" name="content_type" type="choice">
